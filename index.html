@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <title>Scoreboard</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="home_guest">
+
+            <div class="home-container">
+                <h3>Home</h3>
+                <div class="box">
+                    <p id="home">0</p>
+                </div>
+                <div class="addons">
+                    <button class="score" id="home1" onclick="homeAdd(1)">+1</button>
+                    <button class="score" id="home2" onclick="homeAdd(2)">+2</button>
+                    <button class="score" id="home3" onclick="homeAdd(3)">+3</button>
+                </div>
+            </div>
+
+            <div class="guest-container">
+                <h3>Guest</h3>
+                <div class="box">
+                    <p id="guest">0</p>
+                </div>
+                <div class="addons">
+                    <button class="score" id="guest1" onclick="guestAdd(1)">+1</button>
+                    <button class="score" id="guest2" onclick="guestAdd(2)">+2</button>
+                    <button class="score" id="guest3" onclick="guestAdd(3)">+3</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="button">
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+
+
+        <div class="button">
+            <button id="save" onclick="save()">Save</button>
+        </div>
+
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Home</th>
+                    <th>Guest</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
